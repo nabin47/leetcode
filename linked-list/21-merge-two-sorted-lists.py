@@ -26,12 +26,12 @@ class Solution(object):
                 if l1 == None:
                     if prev == None:
                         l1 = l2
+                        prev = l1
                         l1 = l1.next
                     else:
                         prev.next = l2
                         prev = prev.next
-                    l2 = l2.next
-                    continue
+                    break
                 temp = l2
                 l2 = l2.next
                 if prev != None:
